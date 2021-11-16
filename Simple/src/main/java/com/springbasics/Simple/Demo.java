@@ -5,7 +5,7 @@ public class Demo {
 	public static void main(String args[]) {
 		String str="Anusha";
 		str="Arun";
-		
+		System.out.println("for gits");
 		System.out.println(str);
 		System.out.println(revString(str));
 	}
