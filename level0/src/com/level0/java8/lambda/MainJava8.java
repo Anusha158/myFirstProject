@@ -21,6 +21,7 @@ public class MainJava8 {
   new Thread(task2).start();
   obj.SumNmDivisibletwo();
 obj.groupingBy();
+//obj.morethnFive();
 
 	}
 

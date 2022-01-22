@@ -1036,7 +1036,20 @@ System.out.println(s3+" "+s4);
 		a=b-a;
 		b=b-a;
 		System.out.println("a="+a+" "+"b="+b);
-	}	
+	}
+	public static boolean twoarraysEqual() {
+		boolean result=true;
+		List<Integer> a1=new ArrayList<>(Arrays.asList(1,2,3));
+		List<Integer> a2=new ArrayList<>(Arrays.asList(3,2,1));
+		if(a1.size()==a2.size()&&a1.containsAll(a2)) {
+			
+				return result;
+					
+			
+		}
+		return false;
+		
+	}
 }  
 
 

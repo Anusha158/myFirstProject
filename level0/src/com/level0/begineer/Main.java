@@ -1,14 +1,11 @@
 package com.level0.begineer;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.*;
-import java.io.*;
+import java.util.Collections;
 import java.util.LinkedHashSet;
-import java.util.List;
 
 public class Main {
-
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		CollectionsDemo c=new CollectionsDemo();
@@ -61,6 +58,7 @@ public class Main {
 		     
 	      //Practice Program
 	      Practice p =new Practice();
+	      PracticePattern ppattern=new PracticePattern();
 	      int[] values = { 7, 2, 6, 1, 4, 7, 4, 5, 4, 7, 7, 3, 1 };
 	       //p.duplicate(values);
 	     // p.Ocurrence(values);
@@ -157,15 +155,20 @@ public class Main {
 
 	//p.mapPrct();
 	//p.setPractice();
-	int tonum[]= {7, 1, 3, 2, 4, 5, 6};
-	p.twoSwap(tonum);
-	String ballonscount="nlaebolko";
-	int ballonsCount=p.maxNumberOfBalloons(ballonscount);
-	System.out.println(ballonsCount);
-	p.stringDemo();
-	p.getSmallestAndLargest("welcometojava", 3);
-	p.firstNonOcuurence();
-	p.swapWithoutVariable();
+	/*
+	 * int tonum[]= {7, 1, 3, 2, 4, 5, 6}; p.twoSwap(tonum); String
+	 * ballonscount="nlaebolko"; int
+	 * ballonsCount=p.maxNumberOfBalloons(ballonscount);
+	 * System.out.println(ballonsCount); p.stringDemo();
+	 * p.getSmallestAndLargest("welcometojava", 3); p.firstNonOcuurence();
+	 * p.swapWithoutVariable(); boolean result=Practice.twoarraysEqual();
+	 * System.out.println(result+"=equal arrays");
+	 */
+	
+	ppattern.printPattern(5);
 	}
+
+	
+	
 
 }

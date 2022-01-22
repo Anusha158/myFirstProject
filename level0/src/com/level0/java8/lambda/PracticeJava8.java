@@ -92,13 +92,13 @@ public class PracticeJava8  {
 	}
 	public void duplicateEl() {
 		List<String> list=Arrays.asList("fruits","flowers","fruits","Animals","birds");
-		Set<String> items = new HashSet<>();
-
+		//Set<String> items = new HashSet<>();
+		list.stream().distinct().forEach(System.out::println);
 		
-		list.stream().filter(n -> !items.add(n))
-        .collect(Collectors.toSet())
-        .forEach(System.out::println);
-	
+		/*
+		 * list.stream().filter(n -> !items.add(n)) .collect(Collectors.toSet())
+		 * .forEach(System.out::println);
+		 */
 	}
 	
 	public void toFindSecondLarge() {
@@ -131,6 +131,14 @@ public class PracticeJava8  {
 
 		
 	}
+	public void morethnFive() {
+		List<String> items =
+                Arrays.asList("app","orange", "ban", "papaya");
+		List <String> newitems=items.stream().filter(i->i.length()>=5).collect(Collectors.toList());
+	System.out.println(newitems);
+	}
+	
+
 	
 	
 	
